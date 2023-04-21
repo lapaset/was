@@ -1,6 +1,14 @@
 <script lang="ts">
+	import { onMount, type ComponentType } from 'svelte';
+
   export let data;
-  const component = data.component;
+  let component: ComponentType | null = null
+  
+  onMount(() => {
+    component = data.component;
+  })
 </script>
 
-<svelte:component this={component} />
+{#if component}
+  <svelte:component this={component} />
+{/if}
