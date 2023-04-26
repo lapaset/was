@@ -3,7 +3,7 @@
 
   export let data;
   let component: ComponentType | null = null
-  
+
   onMount(() => {
     component = data.component;
   })

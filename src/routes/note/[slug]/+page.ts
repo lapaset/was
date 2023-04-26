@@ -1,8 +1,8 @@
 import type { ComponentType } from "svelte";
 import type { NoteParams, NoteType } from "../../../types/note.type";
-import NotFound from "../../../notes/NotFound.svelte";
-import GettingStarted from "../../../notes/GettingStarted.svelte";
-import AnotherNote from "../../../notes/AnotherNote.svelte";
+import NotFound from "../../../lib/notes/NotFound.svelte";
+import GettingStarted from "../../../lib/notes/GettingStarted.svelte";
+import AnotherNote from "../../../lib/notes/AnotherNote.svelte";
 
 const getNote = (slug: string): ComponentType => {
   switch (slug.toLowerCase()) {
