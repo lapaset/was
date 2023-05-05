@@ -11,7 +11,7 @@
 	$: previousNote = data.previousNote
 	$: nextNote = data.nextNote
 
-	const getUrl = (slug: string) => `/note/${slug}`
+	const getUrl = (slug: string) => `/was/note/${slug}`
 </script>
 
 {#if note}

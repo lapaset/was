@@ -5,7 +5,7 @@
 </script>
 
 <li>
-	<a href={`note/${id}`}>{title}</a>
+	<a href={`/was/note/${id}`}>{title}</a>
 	<span>{date}</span>
 </li>
 

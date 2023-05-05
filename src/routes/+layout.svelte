@@ -1,5 +1,5 @@
 <header>
-	<a href="/">
+	<a href="/was">
 		<h1>IAAP WAS Learning Diary</h1>
 	</a>
 </header>
