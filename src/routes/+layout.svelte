@@ -38,7 +38,7 @@
 		font-size: 0.8em;
 		font-weight: 900;
 		color: black;
-		background: aliceblue;
+		background: #F7E08D;
 		margin-bottom: 0;
 		width: 60px;
 		text-align: center;
@@ -59,7 +59,7 @@
 
 	h1 {
 		margin: 0;
-		font-size: 1em;
+		font-size: 1.2em;
 		color: black;
 		font-family: 'Arial Black', sans-serif;
 		font-weight: 900;
