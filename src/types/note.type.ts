@@ -1,9 +1,14 @@
-import type { ComponentType } from "svelte";
+import type { ComponentType } from 'svelte'
 
-export type NoteParams = {
-  slug: string;
+export type Note = {
+	id: string
+	date: string
+	title: string
+	component: ComponentType
 }
 
-export type NoteType = {
-  component: ComponentType
+export type NoteProps = {
+	note: Note
+	nextNote?: Note
+	previousNote?: Note
 }
