@@ -1,23 +1,23 @@
-import type { ComponentType } from "svelte";
-import type { NoteParams, NoteType } from "../../../types/note.type";
-import NotFound from "../../../lib/notes/NotFound.svelte";
-import GettingStarted from "../../../lib/notes/GettingStarted.svelte";
-import AnotherNote from "../../../lib/notes/AnotherNote.svelte";
+import type { NoteProps } from '../../../types/note.type'
+import { notes } from '$lib/notes'
 
-const getNote = (slug: string): ComponentType => {
-  switch (slug.toLowerCase()) {
-    case 'getting-started': {
-      return GettingStarted;
-    }
-    case 'another-note': {
-      return AnotherNote;
-    }
-    default: {
-      return NotFound;
-    }
-  }
+type Params = {
+	params: {
+		slug: string
+	}
 }
 
-export function load({ params }: {params: NoteParams}): NoteType {
-  return { component: getNote(params.slug) }
-} 
+export const load = ({ params }: Params): NoteProps | undefined => {
+	const noteIndex = notes.findIndex((n) => n.id === params.slug)
+	if (noteIndex < 0) {
+		return undefined
+	}
+
+	const nextNote =
+		noteIndex < notes.length - 1 ? notes[noteIndex + 1] : undefined
+	const previousNote = noteIndex > 0 ? notes[noteIndex - 1] : undefined
+
+	return noteIndex !== undefined
+		? { note: notes[noteIndex], nextNote, previousNote }
+		: undefined
+}
