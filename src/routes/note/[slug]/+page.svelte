@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Note } from '../../../types/note.type.js'
 	import ArrowLink from '$lib/components/ArrowLink.svelte'
+	import { getHref } from '../../../utils/common.svelte'
 
 	export let data
 	let note: Note | undefined
@@ -11,7 +12,7 @@
 	$: previousNote = data.previousNote
 	$: nextNote = data.nextNote
 
-	const getUrl = (slug: string) => `/was/note/${slug}`
+	const getUrl = (slug: string) => getHref(`/note/${slug}`)
 </script>
 
 {#if note}

@@ -1,5 +1,9 @@
+<script>
+	import { getHref } from '../utils/common.svelte'
+</script>
+
 <header>
-	<a href="/was">
+	<a href={getHref('/')}>
 		<h1>IAAP WAS Learning Diary</h1>
 	</a>
 </header>

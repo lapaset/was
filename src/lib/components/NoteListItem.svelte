@@ -1,11 +1,13 @@
 <script lang="ts">
+	import { getHref } from '../../utils/common.svelte'
+
 	export let date: string
 	export let title: string
 	export let id: string
 </script>
 
 <li>
-	<a href={`/was/note/${id}`}>{title}</a>
+	<a href={getHref(`/note/${id}`)}>{title}</a>
 	<span>{date}</span>
 </li>
 
