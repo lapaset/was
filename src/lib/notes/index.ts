@@ -16,11 +16,12 @@ export const notes: Note[] = [
 		title:
 			'1.1. Understand and interpret accessibility specifications and techniques',
 		component: Note1
-	}
-	/* 	{
+	},
+	{
 		id: '1.2',
-		date: '5.5.2023',
-		title: 'Understand the relationship between principles, guidelines, and success criteria',
+		date: '10.5.2023',
+		title:
+			'Understand the relationship between principles, guidelines, and success criteria',
 		component: Note2
-	} */
+	}
 ]
