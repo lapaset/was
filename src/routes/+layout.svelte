@@ -17,11 +17,12 @@
 		background: white;
 	}
 
-	:global(h2, h3) {
+	:global(h2, h3, h4) {
 		color: black;
 		font-family: 'Arial Black', sans-serif;
-		font-weight: 900;
-		letter-spacing: 0.05em;
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		line-height: 1.5em;
 	}
 
 	:global(a, p, span, li) {
@@ -36,20 +37,23 @@
 
 	:global(.date) {
 		font-size: 0.8em;
-		font-weight: 900;
+		font-weight: 500;
 		color: black;
-		background: #F7E08D;
 		margin-bottom: 0;
-		width: 60px;
-		text-align: center;
-		padding: 4px 8px;
-		border-radius: 12px;
+	}
+
+	:global(.highlight) {
+		border-radius: 40%;
+		font-family: 'Arial Black', sans-serif;
+		font-weight: 900;
+		padding: 0 8px 0 10px;
+		background-color: gold;
 	}
 
 	header {
 		display: block;
 		position: fixed;
-		background: white;
+		background: aliceblue;
 		border-bottom: 1px solid black;
 		top: 0;
 		left: 0;

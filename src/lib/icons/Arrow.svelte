@@ -23,7 +23,6 @@
 		width: 1em;
 		height: 1em;
 		fill: currentColor;
-		overflow: hidden;
 	}
 
 	.left {

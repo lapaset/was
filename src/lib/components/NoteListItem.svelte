@@ -19,7 +19,7 @@
 	}
 
 	li:nth-child(odd) {
-		background-color: #F7E08D;
+		background-color: lavender;
 	}
 
 	li span {
