@@ -32,6 +32,10 @@
 		margin-top: 16px;
 	}
 
+	a:hover {
+		background: #E6EEF5;
+	}
+
 	.right {
 		text-align: right;
 	}

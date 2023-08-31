@@ -59,6 +59,7 @@
 		position: fixed;
 		background: aliceblue;
 		border-bottom: 1px solid black;
+		box-shadow: 4px 0 8px rgba(0,0,0, 0.3), 4px 0 16px rgba(0, 0, 0, 0.1); 
 		top: 0;
 		left: 0;
 		width: 100%;
